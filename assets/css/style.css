@@ -1,0 +1,91 @@
+.ocul {
+    display: none;
+}
+
+/*.fondo {
+    background-color: #a9a9a9;
+}*/
+.imagen_mascota {
+    background-image: url("assets/img/p07ryyyj.jpg");
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    margin-top: ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+form {
+    color: white;
+    width: 500px;
+    background-color: #373c3f;
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+    form {
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .imagen_mascota {
+        width: 80%;
+        margin: auto;
+    }
+}
+.logo {
+    background-image: url("assets/img/logo.png");
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.input {
+    color: white;
+    background-color: #676767;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #676767;
+}
+#id1, #id2 {
+    margin-bottom: 100px;
+}
+.calc {
+    width: 100%;
+    border: none;
+    margin: 16px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.resp {
+    color: white;
+    width: 70%;
+    background-color: #676767;
+    margin: auto;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.perro {
+    background-image: url("assets/img/istockphoto-1165141987-1024x1024-removebg-preview.png");
+    width: 40%;
+    height: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.gato {
+    background-image: url("assets/img/vecteezy_lindo-gato-de-dibujos-animados-gatito_8483714.png");
+    width: 40%;
+    height: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.masc {
+    text-align: center;
+}
+.perro, .gato {
+    display: inline-block;
+}
