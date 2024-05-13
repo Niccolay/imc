@@ -6,7 +6,7 @@
     background-color: #a9a9a9;
 }*/
 .imagen_mascota {
-    background-image: url("assets/img/p07ryyyj.jpg");
+    background-image: url("../img/p07ryyyj.jpg");
     width: 50%;
     height: 500px;
     margin: auto;
@@ -37,7 +37,7 @@ form {
     }
 }
 .logo {
-    background-image: url("assets/img/logo.png");
+    background-image: url("../img/logo.png");
     width: 100px;
     height: 100px;
     background-size: contain;
@@ -70,14 +70,14 @@ form {
     text-align: center;
 }
 .perro {
-    background-image: url("assets/img/istockphoto-1165141987-1024x1024-removebg-preview.png");
+    background-image: url("../img/istockphoto-1165141987-1024x1024-removebg-preview.png");
     width: 40%;
     height: 130px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 .gato {
-    background-image: url("assets/img/vecteezy_lindo-gato-de-dibujos-animados-gatito_8483714.png");
+    background-image: url("../img/vecteezy_lindo-gato-de-dibujos-animados-gatito_8483714.png");
     width: 40%;
     height: 130px;
     background-size: contain;
