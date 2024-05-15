@@ -2,12 +2,21 @@ function mostr1() {
     document.getElementById("id1").classList.remove("ocul");
     document.getElementById("id2").classList.add("ocul");
     document.getElementById("resp").classList.add("ocul");
+    document.getElementById("id0").classList.add("ocul");
 }
 function mostr2() {
     document.getElementById("id2").classList.remove("ocul");
     document.getElementById("id1").classList.add("ocul");
     document.getElementById("resp").classList.add("ocul");
+    document.getElementById("id0").classList.add("ocul");
 }
+function mostr() {
+    document.getElementById("id0").classList.remove("ocul");
+    document.getElementById("id1").classList.add("ocul");
+    document.getElementById("id2").classList.add("ocul");
+    document.getElementById("resp").classList.add("ocul");
+}
+
 
 function imc() {
     document.getElementById("resp").innerHTML="";
@@ -32,22 +41,31 @@ function perro() {
     document.getElementById("resp").innerHTML = "";
     document.getElementById("resp").classList.remove("ocul");
     var a = parseFloat(document.getElementById("nacimiento").value);
-    var b = new Date().getFullYear();
-    var c = b-a;
     var d = document.getElementById("nombre1").value;
-    document.getElementById("resp").innerHTML = d+" tiene "+c*7+" años caninos";
+    document.getElementById("resp").innerHTML = d+" tiene "+a*7+" años caninos";
 }
 function gato() {
     document.getElementById("resp").innerHTML = "";
     document.getElementById("resp").classList.remove("ocul");
     var a = parseFloat(document.getElementById("nacimiento").value);
-    var b = new Date().getFullYear();
-    var d = document.getElementById("nombre1").value;
-    var c = b-a;
-    if (c <= 1) {
-        document.getElementById("resp").innerHTML = d+" tiene 15 años felinos";
+    var b = 16 * Math.log(a) + 31;
+    document.getElementById("resp").innerHTML = d+" tiene "+b+" años caninos";
+}
+
+
+var a;
+var b; 
+function registro() {
+    a = document.getElementById("usser").value;
+    b = document.getElementById("pass").value;
+    document.getElementById("id0").reset();
+}
+function inicio() {
+    var d = document.getElementById("usser").value;
+    var e = document.getElementById("pass").value;
+    if (a === d && b === e) {
+        alert("BIENVENIDO " + a + "!");
     } else {
-        c = 15+(c-1)*4;
-        document.getElementById("resp").innerHTML = d+" tiene "+c+" años felinos";
+        alert("Intenta de nuevo.");
     }
 }
