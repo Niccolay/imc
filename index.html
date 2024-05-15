@@ -19,13 +19,15 @@
               <a class="nav-link" href="#" onclick="mostr()">Inicio de Sesion</a>
               <a class="nav-link" href="#" onclick="mostr1()">Calcular IMC</a>
               <a class="nav-link" href="#" onclick="mostr2()">Calcular edad</a>
+              <a class="nav-link" href="#" onclick="mostr3()">Generar Email</a>
+              <a class="nav-link" href="#" onclick="mostr4()">Horas de sueño recomendadas</a>
               
             </div>
           </div>
         </div>
       </nav>
       <div class="fondo">
-      <div class="imagen_mascota"></div>
+      <div class="imagen_mascota" id="imgato"></div>
       
       <div class="registro">
         <form class="ocul" id="id0">
@@ -59,12 +61,48 @@
                 <input class="input" id="peso">
             </div>
             <div>
-                <label>Altura hasta el hombro(mt):</label>
+                <label>Altura(mt):</label>
                 <input class="input" id="altura">
             </div>
             <button class="calc" onclick="imc()">Calcular</button>
         </form>
         
+      </div>
+
+      <div class="genemail">
+        <form class="ocul" id="id3">
+          <h3>Generar un correo electronico</h3>
+          <div>
+              <label>Nombre(s): </label>
+              <input class="input" id="nombre2">
+          </div>
+          <div>
+              <label>Apellidos: </label>
+              <input class="input" id="apellidos">
+          </div>
+          <div>
+              <label>Año de nacimiento:</label>
+              <input type="date" class="input" id="fecha">
+          </div>
+          <button class="calc" onclick="emaill()">Generar</button>
+      </form>
+      </div>
+
+
+      <div class="operacion">
+        <form class="ocul" id="id4">
+          <h3>Horas de sueño recomendads</h3>
+          <div>
+              <label>Edad:</label>
+              <input class="input" id="edad1">
+          </div>
+          <div>
+              <label>Horas de actividad fisica:</label>
+              <input class="input" id="fis">
+          </div>
+          
+          <button class="calc" onclick="fisi()">Calcular</button>
+      </form>
       </div>
 
       <div class="calc_edad">
@@ -81,8 +119,8 @@
             </div>
             <h4>Seleciona una opcion:</h4>
             <div class="masc">
-                <button class="calc" onclick="perro()">opcion 1</button>
-                <button class="calc" onclick="gato()"> opcion 2</button>
+                <button class="calc" onclick="perro()">opcion 1(X7)</button>
+                <button class="calc" onclick="gato()">opcion 2(formula)</button>
             </div>
             
         </form>
