@@ -86,6 +86,7 @@ function registro() {
     e = document.getElementById("usser").value;
     q = document.getElementById("pass").value;
     document.getElementById("id0").reset();
+    alert("Datos guardados.")
 }
 function inicio() {
     var d = document.getElementById("usser").value;
