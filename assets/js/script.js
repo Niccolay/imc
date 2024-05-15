@@ -24,7 +24,7 @@ function imc() {
     var a = parseFloat(document.getElementById("peso").value);
     var b = parseFloat(document.getElementById("altura").value);
     var d = document.getElementById("nombre").value;
-    var c = a / (b * 2);
+    var c = a / (b * b);
 
     if (c < 18) {
         document.getElementById("resp").innerHTML = "El IMC de "+d+" es: " + c.toFixed(2) + "    BAJO PESO";
