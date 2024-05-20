@@ -11,6 +11,7 @@ body {
     background-size:cover;
  
 }
+
 .imagen_mascota {
     background-image: url("../img/p07ryyyj.jpg");
     width: 50%;
@@ -71,15 +72,25 @@ form {
     margin-bottom: 100px;
 }
 .calc {
+    background-color: #373c3f;
+    color: white;
+    border: 3px solid white;
+    width: 95%;
+    padding: 10px;                      
+    border-radius: 30px;
+    transition: width 0.3s, height 0.3s;
+    cursor: pointer;
+}
+.calc {
+    display: block;
+    margin: 16px auto;
+}
+.calc:hover {
     width: 100%;
-    border: none;
-    margin: 16px 0;
-    padding: 10px;
-    border-radius: 10px;
 }
 .masc .calc {
     width: 40%;
-    
+    display: inline-block;
 }
 .resp {
     color: white;
