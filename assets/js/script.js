@@ -81,20 +81,44 @@ function gato() {
 
 
 var e;
-var q; 
+var q;
+var o=0; 
 function registro() {
     e = document.getElementById("usser").value;
     q = document.getElementById("pass").value;
     document.getElementById("id0").reset();
-    alert("Datos guardados.")
+    alert("datos guardados")
 }
 function inicio() {
     var d = document.getElementById("usser").value;
-    var e = document.getElementById("pass").value;
-    if (e === d && q === e) {
-        alert("BIENVENIDO " + e + "!");
+    var p = document.getElementById("pass").value;
+    o+=1;
+    if (e === d && q === p) {
+        document.getElementById("menu2").classList.add("nav-link");
+        document.getElementById("menu3").classList.add("nav-link");
+        document.getElementById("menu4").classList.add("nav-link");
+        document.getElementById("menu5").classList.add("nav-link");
+        document.getElementById("menu5").classList.remove("ocul");
+        document.getElementById("menu4").classList.remove("ocul");
+        document.getElementById("menu3").classList.remove("ocul");
+        document.getElementById("menu2").classList.remove("ocul");
+        alert("BIENVENIDO " + e + "!"); 
+        o=0;
     } else {
-        alert("Intenta de nuevo.");
+        if ((4-o) == 0) {
+            document.getElementById("menu2").classList.add("ocul");
+            document.getElementById("menu3").classList.add("ocul");
+            document.getElementById("menu4").classList.add("ocul");
+            document.getElementById("menu5").classList.add("ocul");
+            document.getElementById("menu5").classList.remove("nav-link");
+            document.getElementById("menu4").classList.remove("nav-link");
+            document.getElementById("menu3").classList.remove("nav-link");
+            document.getElementById("menu2").classList.remove("nav-link");
+            alert("Menu bloqueado.");
+            o=0;
+        } else {
+            alert("Te quedan "+(4-o)+" intentos.");
+        }
     }
 }
 
