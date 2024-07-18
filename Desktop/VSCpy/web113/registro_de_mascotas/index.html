@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro de mascotas</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="#e1" class="enlace">inicio</a></li>
+                <li><a href="https://niccolay.github.io/form" class="enlace">registro</a></li>
+                <li><a href="#e3" class="enlace">preguntas frecuentes</a></li>
+                <li><a href="#e4" class="enlace">animales extraviados</a></li>
+            
+            </ul>
+            <hr>
+        </nav>
+    </header>
+    <div class="portada">
+        <div id="port"></div>
+        <div>
+            <h1>Registro de mascotas y <br>animales de compañia</h1>
+        </div>
+    </div>
+    <div class="sec"></div>
+    <footer>
+        <div>
+            <h1><span>contactos</span></h1>
+            
+            
+            <!--octavo bloque-->
+            <div class="section" id="contacto">
+                
+                <a href="https://Twitter.com">
+                <img alt="Twitter" src="https://aphelos.github.io/web/enl/1532475.png"/></a>
+                <a href="http://facebook.com">
+                <img alt="facebook" src="https://aphelos.github.io/web/enl/20673.png"/></a>
+                <a href="http://instagram.com">
+                <img alt="insta" src="https://aphelos.github.io/web/enl/87390.png"/></a>
+                
+            </div>
+        </div>
+        <div class="copyright"> &copy; 2024 Derechos Reservados</div>
+    </footer>
+    <script>
+        var nav = document.querySelector(".logo");
+        var ul = document.querySelector("ul");
+        ul.style.maxHeight="0px";
+        ul.style.padding="0px";
+        nav.addEventListener("click", function(){
+        if(ul.style.maxHeight=="0px"){
+        ul.style.maxHeight="400px";
+        ul.style.padding="0px 0px";
+        }else{
+        ul.style.maxHeight="0px";
+        ul.style.padding="0";
+        }
+        });
+        
+    </script>
+</body>
+</html>
